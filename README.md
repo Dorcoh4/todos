@@ -26,7 +26,3 @@ This repository contains the backend implementation for a TO-DOs web application
    - Notification Microservice: `cd notification-microservice && npm start` (Port: 4000)
 
 Ensure MongoDB is running locally or update the connection strings accordingly.
-
----
-
-Note: Additional enhancements and considerations may be required based on specific requirements and use cases. Input validation and error handling should be implemented in a production-ready application to ensure data correctness, prevent security vulnerabilities, and handle errors or exceptions that may occur during data processing.
