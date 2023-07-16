@@ -12,7 +12,7 @@ This repository contains the backend implementation for a TO-DOs web application
 
 2. Single User: The application serves a single user. For multi-user support, modifications are needed.
 
-3. `sendNotification()`: Assumes this method is implemented for sending notifications but does not provide specifics.
+3. `sendNotification()`: We assume this method is implemented.
 
 4. Data Validity: For the purpose of this assignment, we assume the received data is correct and follows the expected structure and format. However, in a real-world scenario, it is crucial to implement proper input validation and error handling to ensure data correctness, integrity, and security.
 
