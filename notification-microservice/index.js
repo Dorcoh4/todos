@@ -1,11 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-
+const config = require('./config');
 const Todo = require('../todos-microservice/models/todo');
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/todos', {
+mongoose.connect(config.mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
@@ -47,7 +47,7 @@ function sendNotification(todo) {
 }
 
 // Start the server
-const port = 4000;
+const port = config.port || 4000;
 app.listen(port, () => {
   console.log(`Notification Microservice running on port ${port}`);
 });
