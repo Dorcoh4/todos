@@ -1,11 +1,13 @@
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const config = require('./config');
 
 const Todo = require('./models/todo');
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/todos', {
+mongoose.connect(config.mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
