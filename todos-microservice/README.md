@@ -18,7 +18,7 @@ This repository contains the backend implementation for a TO-DOs web application
 
 ## How to Run
 
-1. Clone the repository: `git clone https://github.com/your/repository.git`
+1. Clone the repository: `git clone https://github.com/Dorcoh4/todos.git`
 2. Install dependencies for both microservices.
 3. Configure MongoDB connection strings in the microservices' respective config files.
 4. Start both microservices:
